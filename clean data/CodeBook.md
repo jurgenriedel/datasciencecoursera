@@ -38,7 +38,8 @@ The code is splitted in the following sections:
 
 The final data frame has the following format:
 
-  Subjects Activities tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z ...
+  Subjects Activities tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z
+  
 1        1     LAYING         0.2215982       -0.04051395        -0.1132036
 
 2        2     LAYING         0.2813734       -0.01815874        -0.1072456
