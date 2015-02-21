@@ -1,26 +1,18 @@
-# Code Book
+# Code Book - Course Project "Clean Data"
 
 This document describes the code inside the file "run_analysis.R".
 
 The code is splitted in the following sections:
 
-1 Helper functions
-2 Constants
-3 Downloading and loading data
-4 Manipulating data
-5 Writing final data to CSV
+1. Downloading and loading data
+2. Transforming and cleaning data
+3. Output tidy data set to txt file
 
-
-## 1. Hepler functions
-
-### Function to get label from data frame.
-
-## 2. Loading and staging data
+## 1. Loading and staging data
 
 ### Perquisites
 
-1. Down load file "getdata-projectfiles-UCI HAR Dataset.zip" 
-2. Unzip files to working directory in R
+1. Load R package "downloader"
 
 ### Load data files into R.
 
@@ -33,15 +25,14 @@ The code is splitted in the following sections:
 1. Read feature and activitiy lables.
 2. Apply column names to data frames. 
 
-## 3. Transforming and cleaning data
+## 2. Transforming and cleaning data
 
-1. Extract column names from data set which hold mean and standard deviation data.
-2. Combining data frames to form one data frame.
-3. Extract actual columns from data frame which conatin mean and standard deviation data.
-4. Change activity IDs with activities names from activities data frame.
-5. Aggregate data frame grouped by columns "Subjects" and "Activities".
+1. Combining data frames from test data files and train data files to form one data frame. 
+2. Extract column names from data set which hold mean and standard deviation data. Here, the choice was made to look for          variables which names contain "mean" or "std".
+3. Change activity IDs with activities names from activities data frame.
+4. Aggregate data frame grouped by columns "Subjects" and "Activities".
 
-## 4. Output tidy data set
+## 3. Output tidy data set
 
 ### Write resulting data frame to text file.
 
